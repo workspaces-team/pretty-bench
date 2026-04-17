@@ -1,0 +1,22 @@
+version: 1
+type: "grouped-bar"
+title: "Minimal YAML benchmark"
+subtitle: "two series, three labels"
+unit: "ops/sec"
+labels:
+  - "run-1"
+  - "run-2"
+  - "run-3"
+series:
+  - name: "main"
+    color: "#5B8E7D"
+    values:
+      - 1200
+      - 1180
+      - 1215
+  - name: "branch"
+    color: "#F4A259"
+    values:
+      - 1350
+      - 1340
+      - 1362

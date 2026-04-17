@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "type": "grouped-bar",
+  "title": "Invalid benchmark",
+  "labels": ["run-1", "run-2"],
+  "series": []
+}

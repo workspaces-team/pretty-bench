@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "type": "bar",
+  "title": "Single implementation benchmark",
+  "subtitle": "cold start latency by phase",
+  "unit": "ms",
+  "labels": ["parse", "transform", "serialize", "flush"],
+  "series": [
+    {
+      "name": "current",
+      "values": [12.4, 18.1, 9.8, 6.2],
+      "color": "#2E86AB"
+    }
+  ]
+}

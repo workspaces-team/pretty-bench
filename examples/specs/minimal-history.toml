@@ -1,0 +1,16 @@
+version = 1
+type = "line"
+title = "Minimal TOML benchmark history"
+subtitle = "five CI runs"
+unit = "ops/sec"
+labels = ["run-101", "run-102", "run-103", "run-104", "run-105"]
+
+[[series]]
+name = "main"
+color = "#5B8E7D"
+values = [1200, 1214, 1221, 1232, 1240]
+
+[[series]]
+name = "branch"
+color = "#BC4B51"
+values = [1260, 1288, 1290, 1302, 1315]

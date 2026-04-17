@@ -1,0 +1,23 @@
+[package]
+name = "pretty-bench-renderer"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Static PNG benchmark renderer for pretty-bench"
+
+[lib]
+name = "pretty_bench_native"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+anyhow = "1.0"
+napi = { version = "2.16", default-features = false, features = ["napi8"] }
+napi-derive = "2.16"
+plotters = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+toml = "0.8"
+
+[build-dependencies]
+napi-build = "2.1"

@@ -1,0 +1,20 @@
+version: 1
+type: "grouped-bar"
+title: "Benchmark comparison"
+subtitle: "baseline vs candidate"
+unit: "ops/sec"
+labels:
+  - "run-1"
+  - "run-2"
+  - "run-3"
+series:
+  - name: "baseline"
+    values:
+      - 1200
+      - 1180
+      - 1215
+  - name: "candidate"
+    values:
+      - 1350
+      - 1340
+      - 1362

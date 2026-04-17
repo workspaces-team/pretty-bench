@@ -1,0 +1,14 @@
+version = 1
+type = "line"
+title = "Benchmark history"
+subtitle = "ops/sec over recent runs"
+unit = "ops/sec"
+labels = ["run-101", "run-102", "run-103", "run-104"]
+
+[[series]]
+name = "main"
+values = [1200, 1212, 1220, 1235]
+
+[[series]]
+name = "branch"
+values = [1260, 1288, 1290, 1302]
