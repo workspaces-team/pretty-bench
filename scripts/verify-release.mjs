@@ -7,7 +7,9 @@ const root = packageRoot();
 const releasePlan = JSON.parse(
   fs.readFileSync(path.join(root, "scripts", "release-plan.json"), "utf8")
 );
-const requireAll = process.argv.includes("--require-all") || process.env.PRETTY_BEN_REQUIRE_ALL_BINARIES === "1";
+const requireAll =
+  process.argv.includes("--require-all") ||
+  process.env.PRETTY_BENCH_REQUIRE_ALL_BINARIES === "1";
 const requiredTags = requireAll ? releasePlan.map((entry) => entry.platformTag) : [platformTag()];
 const failures = [];
 

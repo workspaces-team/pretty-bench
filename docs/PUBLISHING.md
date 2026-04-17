@@ -43,7 +43,7 @@ For a full publish candidate with all native addons assembled:
 
 ```bash
 node ./scripts/assemble-release-native.mjs ./.release-artifacts
-PRETTY_BEN_REQUIRE_ALL_BINARIES=1 npm run release:verify
+PRETTY_BENCH_REQUIRE_ALL_BINARIES=1 npm run release:verify
 npm pack --dry-run
 ```
 
