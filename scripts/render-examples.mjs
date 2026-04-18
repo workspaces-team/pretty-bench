@@ -15,6 +15,6 @@ const jobs = [
 for (const [inputName, outputName] of jobs) {
   const input = path.join(root, "examples", "specs", inputName);
   const output = path.join(root, "examples", "output", outputName);
-  await render({ input, output });
+  await render(input, output);
   process.stdout.write(`Rendered ${output}\n`);
 }

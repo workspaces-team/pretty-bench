@@ -13,7 +13,7 @@ const sourceBinary = sourceIndex >= 0
 
 if (!fs.existsSync(sourceBinary)) {
   throw new Error(
-    `No local native addon was found at ${sourceBinary}. Build it first with npm run build:renderer${release ? "" : ":debug"}.`
+    `No local native addon was found at ${sourceBinary}. Build it first with node ./scripts/build-renderer.mjs${release ? " --release" : ""}.`
   );
 }
 

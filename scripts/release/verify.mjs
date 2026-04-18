@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { nativeOutputPath, packageRoot, platformTag } from "../src/platform.js";
+import { nativeOutputPath, packageRoot, platformTag } from "../../src/platform.js";
 
 const root = packageRoot();
 const releasePlan = JSON.parse(
-  fs.readFileSync(path.join(root, "scripts", "release-plan.json"), "utf8")
+  fs.readFileSync(path.join(root, "scripts", "release", "plan.json"), "utf8")
 );
 const requireAll =
   process.argv.includes("--require-all") ||

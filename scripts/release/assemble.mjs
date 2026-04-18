@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { packageRoot } from "../src/platform.js";
+import { packageRoot } from "../../src/platform.js";
 
 const root = packageRoot();
 const artifactsRoot = path.resolve(process.argv[2] ?? path.join(root, ".release-artifacts"));
